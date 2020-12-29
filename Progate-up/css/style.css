@@ -1,0 +1,298 @@
+@charset "UTF-8";
+
+a{
+  text-decoration: none;
+}
+/********************************   header   **********************************/
+header{
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  background-color: rgba(34,49,52,0.9);
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-nav{
+  display: flex;
+  list-style: none;
+  font-size: 16px;
+  line-height: 65px;
+}
+
+.main-nav a{
+  padding:0 25px;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+
+.main-nav li:hover{
+  transition: all 0.3s;
+  background-color: rgba(255,255,255,0.3);
+}
+
+.main-nav li{
+  transition: all 0.3s;
+}
+
+.logo{
+  width: 124px;
+  margin-top: 20px;
+  margin-left: 25px;
+}
+
+
+/********************************   main-menu   **********************************/
+.main-menu{
+  padding: 180px 0 100px;
+  background-image: url("../images/download.png");
+  background-size: cover;
+}
+
+.main-wrapper{
+  text-align: center;
+  width: 100%;
+  padding: 0 15px;
+}
+
+.title{
+  font-size: 45px;
+  letter-spacing: 5px;
+  color: rgb(255,255,255,0.6);
+}
+
+.main-menu p{
+  font-size: 16px;
+  color: rgb(255,255,255,0.7);
+}
+
+.main-text{
+  margin: 16px 0 40px;
+}
+
+.or{
+  margin: 16px 0 20px;
+}
+
+.button{
+  padding: 8px 24px;
+  color: #fff;
+  border-radius:5px;
+  opacity: 0.8;
+}
+.button:hover{
+  opacity: 1;
+}
+
+.new{
+  background-color: #239b76;
+}
+
+.facebook{
+  background-color: #3b5998;
+}
+
+.twitter{
+  background-color: #55acee;
+  margin: 0 12px;
+}
+
+.main-title{
+  margin: 30.15px 0;
+}
+
+/******************************   lessons   *******************************/
+.lessons-menu{
+  padding: 0 5% 0 5%;
+}
+
+.lessons-wrapper{
+  width: 100%
+  padding:0 15px;
+  text-align:center;
+}
+
+.sub-title{
+  font-size: 24px;
+  color: #5f5d60;
+  font-weight: 500;
+  padding:80px 0 50px;
+}
+
+.lessons{
+  display: flex;
+}
+
+.lesson-one{
+  width: 100%;
+  position: relative;
+}
+
+.info{
+  color: #b3aeb5;
+  font-size: 13px;
+  width: 80%;
+  margin:0 auto;
+  padding: 15px 0 13px;
+}
+
+.language{
+  position: absolute;
+  top: 90px;
+  color: #fff;
+  width: 100%;
+}
+
+/*****************************  message   ********************************/
+.message-menu{
+  padding: 0 0 80px;
+}
+
+.message-wrapper{
+  text-align: center;
+}
+
+.heading{
+  padding: 80px 0 50px;
+}
+
+.sub-title-jp{
+  font-size: 24px;
+  color: #5f5d60;
+  font-weight: 500;
+  margin: 15px 0;
+}
+
+.sub-title-eg{
+  font-size: 19px;
+  color: #5f5d60;
+  font-weight: 500;
+  margin: 15px 0;
+}
+
+.button-sd{
+  background-color: #5dca88;
+  color: #fff;
+  opacity: 0.8;
+  padding: 15px 40px;
+  border-radius: 5px;
+  box-shadow:0 7px 0 0 #1a7940;
+}
+
+.button-sd:hover{
+  opacity: 1;
+}
+
+.button-sd:active{
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+/************************   footer   ***********************/
+footer img{
+  width: 125px;
+}
+
+footer p{
+  color: #b3aeb5;
+  font-size: 12px;
+  margin: 12px 0;
+}
+
+footer{
+  padding: 30px 10px 20px;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1000px) {
+  .title{
+    font-size: 32px;
+    letter-spacing: 5px;
+    color: rgb(255,255,255,0.6);
+  }
+
+  .lessons{
+    flex-wrap: wrap;
+  }
+
+  .lesson-one{
+    width: 50%;
+  }
+
+  .sub-title{
+    font-size: 20px;
+    color: #5f5d60;
+    font-weight: 500;
+    padding:80px 0 50px;
+  }
+
+  .lesson-one{
+    margin-bottom: 50px;
+  }
+
+  .sub-title-jp{
+    font-size: 20px;
+  }
+
+  .sub-title-eg{
+    font-size: 19px;
+  }
+
+  footer{
+    text-align: center;
+  }
+}
+
+@media (max-width:670px) {
+  .main-wrapper{
+    text-align: left;
+  }
+
+  .title{
+    font-size: 24px;
+    letter-spacing: 5px;
+    color: rgb(255,255,255,0.6);
+  }
+
+  .main-text p{
+    font-size: 14px;
+  }
+
+  .button{
+    display:block;
+    text-align: center;
+  }
+
+  .twitter{
+    background-color: #55acee;
+    margin: 0;
+  }
+
+  .facebook{
+    margin-bottom: 10px;
+  }
+
+  .or{
+    text-align: center;
+  }
+
+  .lesson-one{
+    width: 100%;
+  }
+
+  .button-sd{
+    display: block;
+    margin: 0 10px;
+  }
+}
